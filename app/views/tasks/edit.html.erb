@@ -1,0 +1,7 @@
+<%= form_for([@project,@tasks]) do |f| %>
+<%= f.hidden_field(:project_id,:value =>@project.id) %>
+<%= f.text_field(:tname) %>
+
+<%= f.text_field(:tdescrtion) %>
+<%= f.submit("Update Task") %>
+<% end %>

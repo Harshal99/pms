@@ -1,0 +1,15 @@
+<div class = "Projects">	
+	<div class = "Container">
+	<%= link_to 'Projects',projects_path %>
+
+		<div class = "Project">
+			<p class = "Id"> <%= @project.id %></p>
+		<p class = "Name"> <%= @project.name %></p>
+		<p class = "Description"> <%= @project.description %></p>
+		<p class = "Created Time"> <%= @project.created_at %></p>
+		<p class = "Updated Time"> <%= @project.updated_at %></p>
+		</div>
+		
+		<!--:id => project.id-->
+	</div>
+</div>

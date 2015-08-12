@@ -1,0 +1,19 @@
+<div class = "Tasks">	
+	<div class = "Container">
+	<!--<%= link_to 'New Projects',"projects/new" %>-->
+	<%= link_to 'New Tasks',new_project_task_path(@project,@task) %>
+
+		<% @tasks.each do |task| %>
+		<div class = "Project">
+		    <%= link_to 'Edit',edit_project_task_path(@project,task) %>
+		    <%= link_to 'Delete',project_task_path(@project,task),:method => 'delete' %>
+		    <%= link_to 'Show' ,project_task_path(@project,task) %>
+			<p class = "Id"> <%= task.id %></p>
+		<p class = "Name"> <%= task.tname %></p>
+		<p class = "Description"> <%= task.tdescrtion %></p>
+		<p class = "Project ID"> <%= task.project_id %></p>
+	
+		</div>
+		<% end %>
+	</div>
+</div>

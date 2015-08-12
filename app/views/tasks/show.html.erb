@@ -1,0 +1,16 @@
+<div class = "Tasks">	
+	<div class = "Container">
+	<%= link_to 'Back To task lists',project_tasks_path(@project) %>
+
+		<div class = "Task">
+			<p class = "Id"> <%= @task.id %></p>
+			<p class = "Project Id"> <%= @task.project_id %></p>
+		<p class = "Name"> <%= @task.tname %></p>
+		<p class = "Description"> <%= @task.tdescrtion %></p>
+		<p class = "Created Time"> <%= @task.created_at %></p>
+		<p class = "Updated Time"> <%= @task.updated_at %></p>
+		</div>
+		
+		<!--:id => project.id-->
+	</div>
+</div>
