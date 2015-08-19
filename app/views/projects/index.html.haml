@@ -1,0 +1,19 @@
+.Projects
+  .Container
+    / <haml_loud> link_to &#39;New Projects&#39;,&quot;projects/new&quot; </haml_loud>
+    = link_to 'New Projects',new_project_path
+    - @projects.each do |project|
+      .Project
+        = link_to 'Edit',edit_project_path(project)
+        = link_to 'Delete',project_path(project),:method => 'delete'
+        = link_to 'Show' ,project_path(project)
+        = link_to 'Pages',project_tasks_path(project)
+        %p.Id
+          = project.id
+        %p.Name
+          = project.name
+        %p.Description
+          = project.description
+        / <p class = "Created Time"> <haml_loud> project.created_at </haml_loud></p>
+        / #<p class = "Updated Time"> <haml_loud> project.updated_at </haml_loud></p>
+    / :id => project.id

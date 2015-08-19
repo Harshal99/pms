@@ -1,0 +1,15 @@
+.Projects
+  .Container
+    = link_to 'Projects',projects_path
+    .Project
+      %p.Id
+        = @project.id
+      %p.Name
+        = @project.name
+      %p.Description
+        = @project.description
+      %p.Created.Time
+        = @project.created_at
+      %p.Updated.Time
+        = @project.updated_at
+    / :id => project.id

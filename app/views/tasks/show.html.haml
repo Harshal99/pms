@@ -1,0 +1,17 @@
+.Tasks
+  .Container
+    = link_to 'Back to task lists',project_tasks_path(@project)
+    .Task
+      %p.Id
+        = @task.id
+      %p.Project.Id
+        = @task.project_id
+      %p.Name
+        = @task.tname
+      %p.Description
+        = @task.tdescrtion
+      %p.Created.Time
+        = @task.created_at
+      %p.Updated.Time
+        = @task.updated_at
+    / :id => project.id

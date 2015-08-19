@@ -13,8 +13,24 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem "therubyracer"
+#gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+# gem "twitter-bootstrap-rails"
 # Use jquery as the JavaScript library
+
+# Use for Haml
+gem 'haml'
+
+gem 'pg'
+
+gem 'devise'
+
+gem 'devise-bootstrap-views'
+
+gem 'bootstrap-sass'
+
+gem 'bootstrap-sass-extras'
+
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
